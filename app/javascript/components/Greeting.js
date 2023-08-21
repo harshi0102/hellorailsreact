@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getMessage } from "../redux/greetingsReducer";
+import { receiveMessage } from "../redux/greetingsReducer";
 import axios from "axios";
 
 const Greeting = () => {
@@ -9,7 +9,7 @@ const Greeting = () => {
 
   async function fetchMessage() {
     await axios.get("api/messages").then((response) => {
-      dispatch(getMessage(response.data.greeting));
+      dispatch(receiveMessage(response.data.greeting));
     });
   }
 

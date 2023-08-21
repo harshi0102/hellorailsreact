@@ -8,8 +8,8 @@
 puts 'creating greetings seed ...'
 
 Greeting.create(text: 'good morning')
-Greeting.create(text: 'good afternoon')
-Greeting.create(text: 'good evening')
+Greeting.create(text: 'Welcome to my Website')
+Greeting.create(text: 'Hey')
 Greeting.create(text: 'How are you?')
 Greeting.create(text: 'how are the kids doing ?')
 
